@@ -1,6 +1,7 @@
 const express = require('express')
 const UserController = require('./app/controllers/UserController')
 const SessionController = require('./app/controllers/SessionController')
+const auth = require('./app/middleware/auth')
 
 const routes = express.Router()
 
