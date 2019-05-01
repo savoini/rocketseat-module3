@@ -1,6 +1,6 @@
 const nodemailer = require('nodemailer')
-const mailConfig = require('../services/mail')
+const mailConfig = require('../../config/mail')
 
-const transport = nodemailer.createTransport(mailConfig)
+var transport = nodemailer.createTransport(mailConfig)
 
 module.exports = transport
